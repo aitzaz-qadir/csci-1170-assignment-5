@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Start of HTML Document. -->
+<html lang="en">
+    <!-- Head of Website -->
+    <head>
+        <!-- Title -->
+        <title>Table Display</title>
+        <!-- Metadata Information -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- Links to CSS files -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <!-- Body of website -->
+    <body id="main-body">
+        <!-- Top header/nav area -->
+        <header>
+            <!-- Header -->
+            <h1>
+                <img src="img/study.png" alt="Book Icon">
+                University Data Table
+            </h1>
+            <!-- Container for all the buttons -->
+            <div id="data-options">
+                <button onclick="determineIndex0()">School</button>
+                <button onclick="determineIndex1()">Library</button>
+                <button onclick="determineIndex2()">Weather</button>
+                <button onclick="determineIndex3()">Restaurant</button>
+            </div>
+            <!-- Container for search bar and submit button -->
+            <div id="search-form">
+                <img src="img/search.png" alt="Search Icon">
+                <label>Search : </label>
+                <input id="search-bar" type="text" onkeyup="filter()" placeholder="Search for names.." title="Type Query">
+                <button id="search-button" onclick="filter()">Filter Results</button>
+            </div>
+        </header>
+        <!-- Main section of body -->
+        <main id="main-content">
+            <!-- Table will be added here through javascript -->
+        </main>
+        <!-- Footer of body -->
+        <footer></footer>
+        <!-- Link to javascript document -->
+        <script src="js/data-school.js"></script>
+        <script src="js/data-library.js"></script>
+        <script src="js/data-weather.js"></script>
+        <script src="js/data-restaurant.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
